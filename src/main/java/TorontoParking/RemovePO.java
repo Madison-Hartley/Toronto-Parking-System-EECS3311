@@ -57,7 +57,7 @@ public class RemovePO {
 		}
 		
 		if(check == true) {
-			statusLabel.setText("Parking Officer account deleted");
+			statusLabel.setText("Account deleted");
 		}
 		else {
 			statusLabel.setText("Wrong credentials entered. Please retry.");

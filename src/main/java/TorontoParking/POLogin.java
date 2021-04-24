@@ -9,6 +9,7 @@ import javafx.scene.control.Label;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 
+
 public class POLogin {
 	
 	@FXML
@@ -28,11 +29,11 @@ public class POLogin {
 	
 	
 	@FXML
-	private void userlogin(ActionEvent event) throws IOException {
+	public void POlogin(ActionEvent event) throws IOException {
 		checkLogin();
 	}
 	
-	private void checkLogin() throws IOException {
+	public void checkLogin() throws IOException {
 
 		
 		for(int i = 0; i < UserData.usernames.size(); i++) {

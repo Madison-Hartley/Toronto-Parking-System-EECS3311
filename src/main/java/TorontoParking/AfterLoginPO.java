@@ -42,19 +42,19 @@ public class AfterLoginPO {
 	@FXML
 	public void AddSpace(ActionEvent event) throws IOException {
 		Main m = new Main();
-		m.changeScene("/" + "POAddSpace.fxml");
+		m.changeScene("/" + "AddSpacePO.fxml");
 	}
 	
 	@FXML
 	public void ViewRequests(ActionEvent event) throws IOException {
 		Main m = new Main();
-		m.changeScene("/" + "POViewRequests.fxml");
+		m.changeScene("/" + "ViewRequests.fxml");
 	}
 	
 	@FXML
 	public void GrantRequest(ActionEvent event) throws IOException {
 		Main m = new Main();
-		m.changeScene("/" + "POGrantRequest.fxml");
+		m.changeScene("/" + "GrantRequestPO.fxml");
 	}
 	
 	@FXML

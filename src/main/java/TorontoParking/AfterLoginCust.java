@@ -35,7 +35,7 @@ public class AfterLoginCust {
 	@FXML
 	public void ViewBookings(ActionEvent event) throws IOException {
 		Main m = new Main();
-		m.changeScene("/" + "CustViewBookings.fxml");
+		m.changeScene("/" + "ViewBookingsCust.fxml");
 	}
 
 	

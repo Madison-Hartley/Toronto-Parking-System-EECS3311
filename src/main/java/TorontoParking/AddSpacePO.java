@@ -30,7 +30,7 @@ public class AddSpacePO {
 		Integer newnum = ParkingSpaces.allspaces.size() + 1;
 		ParkingSpaces newspace = new ParkingSpaces(newnum);
 		ParkingSpaces.allspaces.add(newspace);
-		updateLabel.setText("Successfully created 1 parking space. To create more, please refresh and try again.");
+		updateLabel.setText("Successfully created parking space(s).");
 	}
 	
 	@FXML
