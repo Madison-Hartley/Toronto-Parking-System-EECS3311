@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/" xmlns:fx="http://javafx.com/fxml/"  fx:controller="TorontoParking.CustBookSpace">
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <TextArea layoutX="19.0" layoutY="52.0" prefHeight="253.0" prefWidth="310.0" text="Please input your license plate, the desired&#10;parking space number, the day of the booking,&#10;and the time of the booking.&#10;&#10;When inputting day of booking, enter digits&#10;as MMDD, example: May 2nd: enter as 0502.&#10;&#10;When inputting time of booking, enter digits&#10;using military time, or the 24-hour clock.&#10;Example: 1:30pm, enter 1330.">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextArea>
+            <TextField fx:id="licensePlate" layoutX="354.0" layoutY="73.0" prefHeight="47.0" prefWidth="156.0" promptText="Licence Plate" />
+            <TextField fx:id="parkingSpaceNum" layoutX="355.0" layoutY="152.0" prefHeight="40.0" prefWidth="155.0" promptText="Parking Space Number" />
+            <TextField fx:id="bookingDate" layoutX="354.0" layoutY="226.0" prefHeight="43.0" prefWidth="157.0" promptText="Day of Booking" />
+            <TextField fx:id="bookingTime" layoutX="353.0" layoutY="297.0" prefHeight="43.0" prefWidth="158.0" promptText="Time of Booking" />
+            <Button fx:id="bookButton" layoutX="406.0" layoutY="355.0" mnemonicParsing="false" onAction="#BookButton" text="Book" />
+            <Button fx:id="prevPage" layoutX="32.0" layoutY="355.0" mnemonicParsing="false" onAction="#PrevPage" text="Return" />
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
