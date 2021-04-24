@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="TorontoParking.ViewBookingsCust">
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <TextArea fx:id="dispbookings" layoutX="185.0" layoutY="103.0" prefHeight="58.0" prefWidth="200.0" />
+            <TextArea fx:id="disp2" layoutX="185.0" layoutY="185.0" prefHeight="55.0" prefWidth="200.0" />
+            <TextArea fx:id="disp3" layoutX="185.0" layoutY="268.0" prefHeight="54.0" prefWidth="200.0" />
+            <Button fx:id="prevPage" layoutX="51.0" layoutY="344.0" mnemonicParsing="false" onAction="#PrevPage" text="Return" />
+            <Label layoutX="215.0" layoutY="46.0" text="Your Bookings">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Button fx:id="gogo" layoutX="232.0" layoutY="344.0" mnemonicParsing="false" onAction="#ShowBookings" text="Display Bookings" />
+            <Button fx:id="cancel1" layoutX="422.0" layoutY="119.0" mnemonicParsing="false" onAction="#CancelFirst" text="Cancel This Booking" />
+            <Button fx:id="cancel2" layoutX="422.0" layoutY="200.0" mnemonicParsing="false" onAction="#CancelSecond" text="Cancel This Booking" />
+            <Button fx:id="cancel3" layoutX="422.0" layoutY="283.0" mnemonicParsing="false" onAction="#CancelThird" text="Cancel This Booking" />
+            <Label fx:id="deleteStatus" layoutX="456.0" layoutY="59.0" textFill="#cd1010" />
+            <TextArea layoutX="25.0" layoutY="115.0" prefHeight="170.0" prefWidth="131.0" text="Please click &quot;Display Bookings&quot; to bring up your bookings. When deleting, to delete more than one, please click on &quot;Display Bookings&quot; between cancellations." wrapText="true" />
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

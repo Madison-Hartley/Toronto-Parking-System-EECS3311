@@ -7,7 +7,7 @@
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/" xmlns:fx="http://javafx.com/fxml/"  fx:controller="TorontoParking.CustBookSpace">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="TorontoParking.CustBookSpace">
    <center>
       <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
          <children>
@@ -20,7 +20,7 @@
             <TextField fx:id="parkingSpaceNum" layoutX="355.0" layoutY="152.0" prefHeight="40.0" prefWidth="155.0" promptText="Parking Space Number" />
             <TextField fx:id="bookingDate" layoutX="354.0" layoutY="226.0" prefHeight="43.0" prefWidth="157.0" promptText="Day of Booking" />
             <TextField fx:id="bookingTime" layoutX="353.0" layoutY="297.0" prefHeight="43.0" prefWidth="158.0" promptText="Time of Booking" />
-            <Button fx:id="bookButton" layoutX="406.0" layoutY="355.0" mnemonicParsing="false" onAction="#BookButton" text="Book" />
+            <Button fx:id="bookButton" layoutX="371.0" layoutY="355.0" mnemonicParsing="false" onAction="#BookButton" text="Proceed to Payment" />
             <Button fx:id="prevPage" layoutX="32.0" layoutY="355.0" mnemonicParsing="false" onAction="#PrevPage" text="Return" />
          </children>
       </AnchorPane>

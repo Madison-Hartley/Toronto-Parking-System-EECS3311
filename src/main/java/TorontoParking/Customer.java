@@ -5,26 +5,27 @@ import java.util.ArrayList;
 public class Customer {
 	
 	
-	ArrayList<Bookings> bookings;
+	static ArrayList<Bookings> bookings;
 	Bookings booking;
 	String email;
 	String firstName;
 	String lastName;
 	String password;
+	String plates;
 	
-	public Customer(String email, String firstName, String lastName, String password) {
+	public Customer(String email, String firstName, String lastName, String password, String plates) {
 		bookings = new ArrayList<Bookings>();
 		this.email = email;
 		this.firstName = firstName;
 		this.lastName = lastName;
 		this.password = password;
+		this.plates = plates;
 		String u = firstName.concat(lastName);
 		UserData.AddUser(u);
 		
 	}
 	
-	public void addBooking(Bookings booking) {
-		this.booking = booking;
+	public static void addBooking(Bookings booking) {
 		bookings.add(booking);
 	}
 	

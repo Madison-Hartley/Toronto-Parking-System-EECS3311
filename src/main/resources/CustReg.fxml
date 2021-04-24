@@ -9,14 +9,14 @@
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="TorontoParking.CustReg">
    <center>
       <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
          <children>
             <TextField fx:id="firstName" layoutX="380.0" layoutY="109.0" promptText="First Name" />
-            <TextField fx:id="lastName" layoutX="380.0" layoutY="163.0" promptText="Last Name" />
-            <TextField fx:id="email" layoutX="380.0" layoutY="225.0" promptText="Email" />
-            <PasswordField fx:id="password" layoutX="380.0" layoutY="283.0" promptText="Password" />
+            <TextField fx:id="lastName" layoutX="380.0" layoutY="150.0" promptText="Last Name" />
+            <TextField fx:id="email" layoutX="380.0" layoutY="200.0" promptText="Email" />
+            <PasswordField fx:id="password" layoutX="380.0" layoutY="244.0" promptText="Password" />
             <Button fx:id="createAcc" layoutX="406.0" layoutY="337.0" mnemonicParsing="false" onAction="#CreateAcc" text="Create Account" />
             <Button fx:id="prevPage" layoutX="66.0" layoutY="337.0" mnemonicParsing="false" onAction="#PrevPage" text="Return" />
             <Label layoutX="66.0" layoutY="54.0" text="New Customer Registration">
@@ -29,6 +29,7 @@
                   <Font size="14.0" />
                </font>
             </TextArea>
+            <TextField fx:id="plates" layoutX="380.0" layoutY="289.0" promptText="License Plate" />
          </children>
       </AnchorPane>
    </center>

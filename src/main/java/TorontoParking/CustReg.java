@@ -27,10 +27,13 @@ public class CustReg {
 	@FXML
 	Button createAcc;
 	
+	@FXML
+	TextField plates;
+	
 	Customer cust;
 	
 	@FXML
-	public void prevPage(ActionEvent event) throws IOException {
+	public void PrevPage(ActionEvent event) throws IOException {
 		Main m = new Main();
 		m.changeScene("/" + "Homepage.fxml");
 	}
@@ -41,7 +44,8 @@ public class CustReg {
 		String firstname1 = firstName.getText().toString();
 		String lastname1 = lastName.getText().toString();
 		String pass = password.getText().toString();
-		cust = new Customer(email1, firstname1, lastname1, pass);
+		String pl = plates.getText().toString();
+		cust = new Customer(email1, firstname1, lastname1, pass, pl);
 		Main m = new Main();
 		m.changeScene("/" + "AfterLoginCust.fxml");
 	}

@@ -14,8 +14,6 @@ public class AfterLoginCust {
 	@FXML 
 	private Button viewBookingsCust;
 	
-	@FXML
-	private Button cancelBookingCust;
 	
 	@FXML
 	private Button logoutCust;
@@ -39,12 +37,7 @@ public class AfterLoginCust {
 		Main m = new Main();
 		m.changeScene("/" + "CustViewBookings.fxml");
 	}
-	
-	@FXML
-	public void CancelBooking(ActionEvent event) throws IOException {
-		Main m = new Main();
-		m.changeScene("/" + "CustCancelBooking.fxml");
-	}
+
 	
 	
 }
